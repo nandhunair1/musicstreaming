@@ -1,4 +1,11 @@
 from pyrogram import Client, filters
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
+import os
+import sys
+from threading import Thread
+from pyrogram import idle, filters
+from pyrogram.handlers import MessageHandler
+from pyrogram import Client, filters
 import asyncio
 import os
 from pytube import YouTube
@@ -21,7 +28,8 @@ def yt_search(song):
         return url
 
 
-@app.on_message(filters.create(ignore_blacklisted_users) & filters.command("song"))
+@Client.on_message(
+    filters.command("song")
 async def song(client, message):
     chat_id = message.chat.id
     user_id = message.from_user["id"]
