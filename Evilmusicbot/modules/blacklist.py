@@ -1,4 +1,11 @@
-from pyrogram.types.messages_and_media import message
+from pyrogram import Client, filters
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
+import os
+import sys
+from threading import Thread
+from pyrogram import idle, filters
+from pyrogram.handlers import MessageHandler
+from helpers.wrappers import errors, admins_only
 from config import OWNER_ID
 from pyrogram import filters
 from pyrogram.errors import BadRequest
@@ -9,7 +16,7 @@ from Evilmusicbot.mrdarkprince import get_arg
 
 
 @Client.on_message(
-    filters.command("start")
+    filters.command("blacklist")
 async def blacklist(client, message):
     if message.reply_to_message:
         user_id = message.reply_to_message.from_user["id"]
@@ -34,7 +41,8 @@ async def blacklist(client, message):
         await message.reply(f"[blacklisted](tg://user?id={user_id})")
 
 
-@app.on_message(filters.user(OWNER_ID) & filters.command("unblacklist"))
+@Client.on_message(
+    filters.command("unblacklist")
 async def unblacklist(client, message):
     if message.reply_to_message:
         user_id = message.reply_to_message.from_user["id"]
