@@ -7,7 +7,9 @@ import Evilmusicbot.sql.blacklist_sql as sql
 from Evilmusicbot.mrdarkprince import get_arg
 
 
-@app.on_message(filters.user(OWNER_ID) & filters.command("blacklist"))
+
+@Client.on_message(
+    filters.command("start")
 async def blacklist(client, message):
     if message.reply_to_message:
         user_id = message.reply_to_message.from_user["id"]
