@@ -5,7 +5,7 @@ from pytube import YouTube
 from pyrogram.types import InlineKeyboardMarkup
 from pyrogram.types import InlineKeyboardButton
 from youtubesearchpython import VideosSearch
-from Evilmusicbot.mrdarkprince import ignore_blacklisted_users, get_arg
+from Evilmusicbot.Evil import ignore_blacklisted_users, get_arg
 from Evilmusicbot import app, LOGGER
 from Evilmusicbot.sql.chat_sql import add_chat_to_db
 
