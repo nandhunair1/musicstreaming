@@ -14,3 +14,5 @@ API_HASH = getenv("API_HASH")
 DURATION_LIMIT = int(getenv("DURATION_LIMIT", "10"))
 
 SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
+DATABASE_URL = os.getenv("DATABASE_URL")
+OWNER_ID = list({int(x) for x in os.environ.get("OWNER_ID", "").split()})
