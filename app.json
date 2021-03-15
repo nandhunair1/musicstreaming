@@ -26,6 +26,10 @@
         "description": " Make a bot at http://telegram.dog/BotFather and get the token of your bot.",
         "value": ""
       },
+      "OWNER_ID": {
+         "description": "Your telegram user id.",
+         "value": ""
+      },
       "BOT_NAME": {
         "description": " Add your bot name by default it is êvilẞø†.",
         "value": "êvilẞø†"
