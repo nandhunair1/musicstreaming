@@ -26,10 +26,6 @@
         "description": " Make a bot at http://telegram.dog/BotFather and get the token of your bot.",
         "value": ""
       },
-      "OWNER_ID": {
-         "description": "Your telegram user id.",
-         "value": ""
-      },
       "BOT_NAME": {
         "description": " Add your bot name by default it is êvilẞø†.",
         "value": "êvilẞø†"
@@ -42,6 +38,29 @@
         "description": "Maximum duration of songs that users can request(in minutes).",
         "value": "10",
         "required": false
-      }
+       },
+        "OWNER_ID": {
+            "description": "Your telegram user id.",
+            "required": true
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "addons": [
+        {
+            "plan": "heroku-postgresql",
+            "options": {
+                "version": "12"
+            }
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
     }
 }
