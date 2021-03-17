@@ -20,15 +20,15 @@ async def start(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "💙 REPO 💙", url="https://github.com/jattpawan/evilbot"
+                        "😎 Developer 😎", url="https://t.me/MrC_VENOM"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "💚 SESSION 💚", url="https://repl.it/@pawanjatt/evilmusicbot"
+                        "❣Group❣", url="https://t.me/tvseriezzz"
                     ),
                     InlineKeyboardButton(
-                        "💜 HEROKU 💜", url="https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fjattpawan%2Fevilbot&template=https%3A%2F%2Fgithub.com%2Fjattpawan%2Fevilbot"
+                        "💜 Channel 💜", url="https://t.me/TV_SERIES_ON"
                     )
                 ],
                 [
@@ -52,15 +52,15 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "💙 REPO 💙", url="https://github.com/jattpawan/evilbot"
+                        "💙 Developer 💙", url="https://t.me/MrC_VENOM"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "💚 SESSION 💚", url="https://repl.it/@pawanjatt/evilmusicbot"
+                        "❣ Group ❣", url="https://t.me/tvseriezzz"
                     ),
                     InlineKeyboardButton(
-                        "💜 HEROKU 💜", url="https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fjattpawan%2Fevilbot&template=https%3A%2F%2Fgithub.com%2Fjattpawan%2Fevilbot"
+                        "💜 Channel 💜", url="https://t.me/TV_SERIES_ON"
                     )
                 ],
                 [
