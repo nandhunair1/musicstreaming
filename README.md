@@ -1,5 +1,5 @@
 
-<h1 align="centre">🎶 Evil Music Bot 🎶</h1>
+<h1 align="centre">🎶 Music Player Bot 🎶</h1>
 
 ## Requirements 📝
 
@@ -12,7 +12,7 @@
 
 <h3 align="centre"> Heroku </h4>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/nandhunair1/musicstreaming)
 
 Get STRING_NAME from here:
 
