@@ -1,14 +1,14 @@
 {
-    "name": "evilbott",
+    "name": "Music Player",
     "description": "An Open-source PyTgCalls based Pyrogram bot to play music in voice chats",
-    "logo": "https://telegra.ph/file/99afe853eb142eb6b5470.jpg",
+    "logo": "https://telegra.ph/file/1751a8e25cab45d659169.png",
     "keywords": [
       "telegram",
       "voicechat",
       "pytgcalls",
       "productivity"
     ],
-    "repository": "https://github.com/jattpawan/evilbot",
+    "repository": "https://github.com/nandhunair1/musicstreaming",
     "stack": "container",
     "env": {
       "API_ID": {
