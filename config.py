@@ -15,4 +15,5 @@ DURATION_LIMIT = int(os.getenv("DURATION_LIMIT", "10"))
 
 SUDO_USERS = list(map(int, os.getenv("SUDO_USERS").split()))
 
+DATABASE_URL = os.getenv("DATABASE_URL")
 OWNER_ID = list({int(x) for x in os.environ.get("OWNER_ID", "").split()})
